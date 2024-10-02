@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    <p><strong>Title:</strong> {{ data.title }}</p>
+    <p><strong>Author:</strong> {{ data.author }}</p>
+    <p><strong>Narrator:</strong> {{ data.narrator }}</p>
+    <p><strong>Length:</strong> {{ data.length }}</p>
+    <p><strong>Rating:</strong> {{ data.rating }}</p>
+    <p><strong>Category:</strong> {{ data.category }}</p>
+    <p><strong>Notes:</strong> {{ data.notes }}</p>
+    <form action="/add_to_database" method="post">
+        <button type="submit">Save to Database</button>
+    </form>
+</body>
+</html>
